@@ -53,7 +53,7 @@ if lastupdate !=data["lastupdate"]:
 		putmsg("download complete\ndecompressing","info")
 		os.system("bzip2 -d "+filename)
 		putmsg("decompression complete\n\nbeginning to dump using api","info")
-		os.system("php entitystore import-json-dump "+nconfig["dump_location"]+" config.json")
+		os.system("php entitystore import-json-dump latest-all.json config.json")
 	except Exception as e:
 		putmsg(str(e),"error")
 		headmsg(str(e),"error")
