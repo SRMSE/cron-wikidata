@@ -1,0 +1,5 @@
+{
+	"dump_location":"",
+	"logfile":"wikidata.log",
+	"head_log":"../cron.log"
+}
