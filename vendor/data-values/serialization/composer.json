@@ -1,0 +1,41 @@
+{
+	"name": "data-values/serialization",
+	"type": "library",
+	"description": "Serializers and deserializers for DataValue implementations",
+	"keywords": [
+		"datavalues",
+		"wikidata",
+		"serialization",
+		"serializers",
+		"deserializers"
+	],
+	"homepage": "https://github.com/DataValues/Serialization",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Jeroen De Dauw",
+			"email": "jeroendedauw@gmail.com",
+			"homepage": "http://jeroendedauw.com",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"irc": "irc://irc.freenode.net/wikidata"
+	},
+	"require": {
+		"php": ">=5.3.0",
+		"data-values/data-values": "~1.0|~0.1",
+		"serialization/serialization": "~3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"DataValues\\Serializers\\": "src/Serializers",
+			"DataValues\\Deserializers\\": "src/Deserializers"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	}
+}

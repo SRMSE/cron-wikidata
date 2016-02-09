@@ -1,0 +1,50 @@
+{
+	"name": "ask/serialization",
+	"type": "library",
+	"description": "Library containing serializers and deserializers for the PHP implementation of the Ask query language",
+	"keywords": [
+		"ask",
+		"wikidata",
+		"SMW",
+		"Semantic MediaWiki",
+		"Serialization",
+		"Deserialization"
+	],
+	"homepage": "https://github.com/wmde/AskSerialization",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Jeroen De Dauw",
+			"email": "jeroendedauw@gmail.com",
+			"homepage": "http://jeroendedauw.com",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"irc": "irc://irc.freenode.net/wikidata"
+	},
+	"require": {
+		"php": ">=5.3.0",
+		"ask/ask": "~1.0",
+		"serialization/serialization": "~3.1",
+		"data-values/data-values": "~1.0|~0.1"
+	},
+	"require-dev": {
+		"data-values/serialization": "~1.0"
+	},
+	"autoload": {
+		"files" : [
+			"AskSerialization.php"
+		],
+		"psr-4": {
+			"Ask\\Serializers\\": "src/Serializers",
+			"Ask\\Deserializers\\": "src/Deserializers",
+			"Ask\\": "src"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	}
+}
